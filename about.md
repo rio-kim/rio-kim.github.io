@@ -4,27 +4,13 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  <strong>개인적인 기록으로 가득찬 기술 블로그</strong>
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
-
-There are currently two themes built on Poole:
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+같은 삽질을 분명히 했던 기억이 있는데, 어떻게 해결했는지 기억이 나지 않는다.
+바로 며칠 전에 했던거 같은데, 아 내가 이렇게 멍청했던가? 어딘가에 정리해둬야겠다.
+정리해둔 연습장은 결국 시간이 지나면 사라지고,
+적어놓은 txt파일은 컴퓨터 어딘가에서 찾아내서 열어봐도 왜 적었었지?
+잘 기억이 나지 않는다.
+기록해두지 않으면 결국 다 까먹더라고.
+그래서 만든 이곳은 매우 개인적일 수 밖에 없고 불친절한 설명으로 가득찬 기술 블로그.
