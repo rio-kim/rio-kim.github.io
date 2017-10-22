@@ -2,8 +2,8 @@
 title: TIL
 tagline: 'Today I Learned. by Rio'
 description: 'Today I Learned. Since 2017. 10. 20.'
-baseurl: ""
-url: http://rio-kim.github.io
+baseurl: ''
+url: https://rio-kim.github.io
 logo: '/public/logo.png'
 
 # Site configurations
@@ -42,7 +42,7 @@ nav:
   Blog:
     - '/blog/'
     - { Categories: '/blog/categories/' }
-    # - { Tags: '/blog/tags/' }
+    - { Tags: '/blog/tags/' }
   About:
     - '/about/'
   # Github Project:
