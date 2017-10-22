@@ -2,8 +2,8 @@
 title: TIL
 tagline: 'Today I Learned. by Rio'
 description: 'Today I Learned. Since 2017. 10. 20.'
-baseurl: ''
-url: https://rio-kim.github.io
+baseurl: ""
+url: http://rio-kim.github.io
 logo: '/public/logo.png'
 
 # Site configurations
@@ -25,7 +25,7 @@ version: 1.0.0
 # About/contact
 author:
   name: Rio Kim
-  description: Fail fast, fail often.
+  description: Fail fast, Fail often.
   gravatar: 56c9168a108c3295c8657ed67c78f0b7 # md5 hash of your email address
   contact:
     linkedin:  https://www.linkedin.com/in/rio-dykim
@@ -45,8 +45,8 @@ nav:
     - { Tags: '/blog/tags/' }
   About:
     - '/about/'
-  # Github Project:
-  #   - 'http://codinfox.github.io/'
+  Github Project:
+    - 'http://rio-kim.github.io/'
 
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'
@@ -60,4 +60,3 @@ hero:
 mathjax: true # whether support mathjax
 google_analytics_token: 'UA-108412512-1' # leave blank if you don't want google analytics
 disqus_short_name: 'rio-tech-blog' # leave blank if you don't want disqus
-encoding: utf-8
