@@ -2,7 +2,7 @@
 layout: post
 title: 80port로 linux에서 tomcat 서버 올리기
 categories: Linux
-tage: linux, tomcat
+tage: linux tomcat
 ---
 
 리눅스의 경우 80포트로 서버를 띄우기 위해서는 root계정(sudo) 명령을 사용해야 한다.

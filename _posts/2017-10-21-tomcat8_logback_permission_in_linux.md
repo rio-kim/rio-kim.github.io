@@ -2,7 +2,7 @@
 layout: post
 title: tomcat war배포시 logback 설정
 categories: Linux
-tags: linux, tomcat, logbak
+tags: linux tomcat logbak
 ---
 
 logback설정시 log file이 생기는 위치를 permission 접근 가능한 절대 경로 위치로 해주는 것이 좋다.

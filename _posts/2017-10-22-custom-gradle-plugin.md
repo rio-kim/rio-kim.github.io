@@ -2,7 +2,7 @@
 layout: post
 title: custom gradle plugin 만들기
 categories: Gradle
-tags: gradle, plugin
+tags: gradle plugin
 ---
 
 gradle plugin을 단독 프로젝트로 만들어 보고 사용해본 후 까먹지 않기 위해 정리한다.
