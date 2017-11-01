@@ -15,15 +15,16 @@ tomcat 설정에서도 active profile 설정이 필요한데, 아래와 같이 �
 
 
 ##### /usr/share/tomcat8/bin/setenv.sh 파일 생성(또는 편집)
-
-    export JAVA_OPTS="$JAVA_OPTS -Dspring.profiles.active=prod"
-
+~~~sh
+export JAVA_OPTS="$JAVA_OPTS -Dspring.profiles.active=prod"
+~~~
 
 이후 tomcat을 재시작한다.
-
-    sudo service tomcat8 restart
-
+~~~sh
+sudo service tomcat8 restart
+~~~
 
 ##### 참고) tomcat 서비스 로그 확인
-
-     sudo tail -200f /usr/share/tomcat8/logs/catalina.out
+~~~sh
+sudo tail -200f /usr/share/tomcat8/logs/catalina.out
+~~~

@@ -13,6 +13,7 @@ tage: linux tomcat
 다시말해 실제 서버는 8080포트에 떠있고 외부에서 80포트로 접속을 하면 8080포트로 알아서 연결 해준다.
 
 다음의 명령어를 통해 기본적인 tomcat 8080포트를 80포트에 연결할 수 있다.
-
-     sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
-     sudo service iptables save
+~~~sh
+sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
+sudo service iptables save
+~~~
