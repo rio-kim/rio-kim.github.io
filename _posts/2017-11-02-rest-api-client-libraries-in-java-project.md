@@ -1,6 +1,6 @@
 ---
 layout: post
-title: java 언어로 된 project에서 쓸 수 있는 REST API client library를 비교해 보자
+title: REST API client library in Java project
 categories: RestAPI
 tags: rest api library java
 ---
