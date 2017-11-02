@@ -2,7 +2,7 @@
 layout: post
 title: InnerClass를 활용해보자 in Java project
 categories: Java
-tags: rest api library java
+tags: java class innerclass
 ---
 
 모델객체를 만들 때 여러 클래스가 중첩되게끔 구성하는 일이 많은데 하위에 있는 클래스가 여러개일 때 그 클래스들을 다 만들어주고나서 클래스 구성을 짜줘야 한다.
