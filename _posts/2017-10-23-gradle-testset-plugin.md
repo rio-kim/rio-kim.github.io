@@ -5,7 +5,7 @@ categories: Testing
 tags: gradle test plugin
 ---
 
-기본적으로 그래들 프로젝트는 unit test를 **main/test/java** 형태로 두는데, 이 외에 다른 test set을 구성하고 싶을 때가 있다. 예를 들면 같은 프로젝트 내에 api test를 따로 구성한다거나, ui test를 구성한다거나.
+기본적으로 그래들 프로젝트는 unit test를 **src/test/java** 형태로 두는데, 이 외에 다른 test set을 구성하고 싶을 때가 있다. 예를 들면 같은 프로젝트 내에 api test를 따로 구성한다거나, ui test를 구성한다거나.
 
 이런 경우에 test를 분리하는 방법에는 여러가지가 있는데 **gradle-testsets-plugin** 플러그인을 통해서 하는 방법을 알아보자.
 
