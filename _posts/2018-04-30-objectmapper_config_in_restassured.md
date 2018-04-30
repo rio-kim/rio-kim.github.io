@@ -5,7 +5,7 @@ categories: Rest-Assured
 tags: rest-assured response parsing
 ---
 
-Rest-Assured 라이브러리를 사용해서 받은 response를 모델 객체로 파싱해서 쓰는 방법에 대해서 간단하게 남겼는데(["Response parsing to class model in Rest-Assured"](https://rio-kim.github.io/testing/2018/04/30/restassured_response_to_class)) 내부적인 동작은 Rest-Assured가 가지고 있는 ObjectMapper가 response로 받은 json구조를 분석하여 Class에 자동으로 파싱해주는 것이다.
+Rest-Assured 라이브러리를 사용해서 받은 response를 모델 객체로 파싱해서 쓰는 방법에 대해서 간단하게 남겼는데(["Response parsing to class model in Rest-Assured"](https://rio-kim.github.io/rest-assured/2018/04/30/restassured_response_to_class)) 내부적인 동작은 Rest-Assured가 가지고 있는 ObjectMapper가 response로 받은 json구조를 분석하여 Class에 자동으로 파싱해주는 것이다.
 
 이때 어떤 api는 수많은 정보를 response에 전달하고, 사용하는 측에서는 response의 모든 값이 아니라 필요한 값만 클래스에 담고 싶은 경우가 있다.
 
