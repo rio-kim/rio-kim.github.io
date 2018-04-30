@@ -1,6 +1,6 @@
 ---
 layout: post
-title: gradle testset을 분리하여 관리하기
+title: gradle testset plugin
 categories: Testing
 tags: gradle test plugin
 ---

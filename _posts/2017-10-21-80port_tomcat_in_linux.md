@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 80port로 linux에서 tomcat 서버 올리기
+title: boot tomcat server with 80 port in linux
 categories: Linux
 tage: linux tomcat
 ---

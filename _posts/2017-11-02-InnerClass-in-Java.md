@@ -1,6 +1,6 @@
 ---
 layout: post
-title: InnerClass를 활용해보자 in Java project
+title: InnerClass in Java project
 categories: Java
 tags: java class innerclass
 ---
@@ -12,7 +12,7 @@ tags: java class innerclass
 이렇게 구조를 짜면 클래스가 두개 생긴다. Customer와 Dog 클래스. **근데 Dog 클래스는 단독으로 쓰이지 않고 Customer안에서만 필요하다고 생각해보자.** (쓰다보니 말도안되는 예시를 드는거 같은데 프로젝트에서는 이런일이 빈번하다. 사내보안규정 때문에 그 코드를 가져올 수 없어서 혼자 생각한게 고작 이런 것들 ㅠㅠ) 그러면 불필요하게 Dog 클래스를 외부에 노출시킬 필요가 없다. 단지 Customer 안에서만 쓰이니까. 그러면 이렇게 만들 수 있다.
 
 ~~~java
-public class ParentClass {
+public class Customer {
 
     private String name;
     private int age;
@@ -31,7 +31,8 @@ public class ParentClass {
 우선 innerClass의 선언은
 
 ~~~java
-outerClass.InnerClass innerClass = outerClass.new InnerClass();
+Customer customer = new Customer();
+Customer.Dog dog = customer.new Dog();
 ~~~
 
 이와 같이 선언한다. 그러면 숨어있는 innerClass를 다른 클래스에서 쓸 수 있다.

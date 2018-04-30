@@ -1,6 +1,6 @@
 ---
 layout: post
-title: custom gradle plugin 만들기
+title: custom gradle plugin
 categories: Gradle
 tags: gradle plugin
 ---
