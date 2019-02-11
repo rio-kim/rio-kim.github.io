@@ -1,4 +1,4 @@
-# Toay I Learned
+# Today I Learned
 ___
 
 Fail fast, Fail often.
