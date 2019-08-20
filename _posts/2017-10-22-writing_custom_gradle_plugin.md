@@ -1,6 +1,6 @@
 ---
 layout: post
-title: custom gradle plugin
+title: Custom gradle plugin
 categories: Gradle
 tags: gradle plugin
 ---

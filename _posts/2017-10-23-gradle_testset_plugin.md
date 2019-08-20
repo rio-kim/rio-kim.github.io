@@ -1,6 +1,6 @@
 ---
 layout: post
-title: gradle testset plugin
+title: Gradle testset plugin
 categories: Testing
 tags: gradle test plugin
 ---

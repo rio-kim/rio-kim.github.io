@@ -1,6 +1,6 @@
 ---
 layout: post
-title: logback configuration in tomcat war
+title: Logback configuration in tomcat war
 categories: Linux
 tags: linux tomcat logbak
 ---

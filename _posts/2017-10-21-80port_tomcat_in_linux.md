@@ -1,6 +1,6 @@
 ---
 layout: post
-title: boot tomcat server with 80 port in linux
+title: Boot tomcat server with 80 port in linux
 categories: Linux
 tage: linux tomcat
 ---

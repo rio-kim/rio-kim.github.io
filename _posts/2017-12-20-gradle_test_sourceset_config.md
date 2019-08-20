@@ -1,6 +1,6 @@
 ---
 layout: post
-title: test sourceset in gradle project
+title: Test sourceset in gradle project
 categories: Testing
 tags: gradle test plugin integrationTest
 ---
