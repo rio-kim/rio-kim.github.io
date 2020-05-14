@@ -17,7 +17,14 @@ cd darknet
 CPU=1
 CUDNN=1
 OPENCV=1
+...
+NVCC=/usr/local/cuda/bin/nvcc
 ~~~
+
+- 중간에 NVCC 경로를 수정해준다.
+- 이후 make를 실행해서 빌드한다.
+- 혹시 opencv 관련해서 오류나는 경우 conda의 경우 `conda install -c conda-forge opencv` 명령으로 opencv를 설치해 준 후 다시 빌드해본다. 이 부분에서 삽질을 오래했다.
+
 ~~~sh
 make
 ~~~
