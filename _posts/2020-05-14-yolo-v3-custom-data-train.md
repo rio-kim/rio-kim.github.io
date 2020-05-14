@@ -217,3 +217,11 @@ Total Detection Time: 21 Seconds
 - 목표는 precision, recall은 0.8정도까지, mAP@0.50은 0.6정도까지
 - 결과 분석은 아래 블로그 참조
   - https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-how-to-measure-performance-of-object-detection
+
+##### 참고한 사이트
+
+- https://github.com/AlexeyAB/darknet
+- https://eremo2002.tistory.com/108
+- https://blog.francium.tech/custom-object-training-and-detection-with-yolov3-darknet-and-opencv-41542f2ff44e
+- https://eehoeskrap.tistory.com/370
+- https://murra.tistory.com/18
