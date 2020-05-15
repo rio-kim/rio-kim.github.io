@@ -179,7 +179,7 @@ height=608
 ##### 8-2. 비디오 테스트
 ~~~sh
 # ./darknet detector demo {data파일} {테스트cfg파일} {학습한weights파일} {테스트할비디오} {-옵션}
-./darknet detector demo custom_data/detector.data custom_data/cfg/yolov3-custom-test.cfg backup/yolov3-custom_last.weights ./test.video -dont_show -out_filename out.avi
+./darknet detector demo custom_data/detector.data custom_data/cfg/yolov3-custom-test.cfg backup/yolov3-custom_last.weights ./test.mp4 -dont_show -out_filename out.avi
 ~~~
 
 - -dont_show: 원격 ssh 환경 등에서 비디오 오픈 없이 실행한다.
