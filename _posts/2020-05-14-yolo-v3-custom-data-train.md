@@ -46,17 +46,9 @@ custom_data/test.txt
 ~~~
 none
 stand-four-legs
-stand-two-legs
 sit-down
 kneel-down
-play-bow
 eating
-peeing
-pooping
-lay-belly
-lay-curled
-lay-side
-lay-sprawled
 ~~~
 
 ##### 4-2. images 폴더
@@ -88,7 +80,7 @@ custom_data/images/c.jpg
 ~~~
 #### 4-5. detector.data 파일
 ~~~
-classes=1
+classes=5
 train=custom_data/train.txt
 valid=custom_data/test.txt
 names=custom_data/custom.names
@@ -129,7 +121,7 @@ backup=backup/
 # ./darknet detector train {data파일} {cfg파일} {trainset 파일} {gpu갯수 옵션}
 ./darknet detector train custom_data/cfg/detector.data custom_data/cfg/yolov3-custom.cfg darknet53.conv.74 -gpus 0,1
 # nohup 실행
-nohup ./darknet detector train custom_data/cfg/detector_yolo_rio.data custom_data/cfg/yolov3-custom_yolo_rio.cfg darknet53.conv.74 -gpus 0,1 &
+nohup ./darknet detector train custom_data/cfg/detector.data custom_data/cfg/yolov3-custom.cfg darknet53.conv.74 -gpus 0,1 &
 ~~~
 ##### 7. 트레이닝 후 로그 보는 방법
 
