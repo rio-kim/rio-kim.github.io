@@ -195,40 +195,33 @@ height=608
 - 중간 생략하고 결과가 아래와 같이 나온다.
 
 ~~~
- detections_count = 628, unique_truth_count = 278
-class_id = 0, name = none, ap = 14.65%           (TP = 5, FP = 9)
-class_id = 1, name = stand-four-legs, ap = 82.66%        (TP = 77, FP = 38)
-class_id = 2, name = stand-two-legs, ap = 100.00%        (TP = 2, FP = 0)
-class_id = 3, name = sit-down, ap = 75.25%       (TP = 35, FP = 23)
-class_id = 4, name = kneel-down, ap = 68.33%     (TP = 21, FP = 27)
-class_id = 5, name = play-bow, ap = 0.00%        (TP = 0, FP = 1)
-class_id = 6, name = eating, ap = 73.92%         (TP = 46, FP = 20)
-class_id = 7, name = peeing, ap = 0.00%          (TP = 0, FP = 0)
-class_id = 8, name = pooping, ap = 0.00%         (TP = 0, FP = 0)
-class_id = 9, name = lay-belly, ap = 29.17%      (TP = 0, FP = 0)
-class_id = 10, name = lay-curled, ap = 0.00%     (TP = 0, FP = 0)
-class_id = 11, name = lay-side, ap = 25.00%      (TP = 1, FP = 2)
-class_id = 12, name = lay-sprawled, ap = 55.00%          (TP = 2, FP = 0)
+ calculation mAP (mean average precision)...
+252
+ detections_count = 360, unique_truth_count = 250
+class_id = 0, name = none, ap = 99.32%           (TP = 31, FP = 4)
+class_id = 1, name = stand-four-legs, ap = 96.36%        (TP = 95, FP = 13)
+class_id = 2, name = sit-down, ap = 99.57%       (TP = 46, FP = 2)
+class_id = 3, name = kneel-down, ap = 100.00%            (TP = 26, FP = 2)
+class_id = 4, name = eating, ap = 91.21%         (TP = 42, FP = 1)
 
- for conf_thresh = 0.25, precision = 0.61, recall = 0.68, F1-score = 0.64
- for conf_thresh = 0.25, TP = 189, FP = 120, FN = 89, average IoU = 52.19 %
+ for conf_thresh = 0.25, precision = 0.92, recall = 0.96, F1-score = 0.94
+ for conf_thresh = 0.25, TP = 240, FP = 22, FN = 10, average IoU = 79.26 %
 
  IoU threshold = 50 %, used Area-Under-Curve for each unique Recall
- mean average precision (mAP@0.50) = 0.403062, or 40.31 %
-Total Detection Time: 21 Seconds
+ mean average precision (mAP@0.50) = 0.972909, or 97.29 %
+Total Detection Time: 6 Seconds
 ~~~
 
 - precision: TP/(TP+FP), 맞춘 수/예측한 전체 모수
 - recall: TP/(TP_FN), 맞춘 수/어노테이션 수
 - IoU: 교집합/합집합 면적
-- 목표는 precision, recall은 0.8정도까지, mAP@0.50은 0.6정도까지
 - 결과 분석은 아래 블로그 참조
-  - https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-how-to-measure-performance-of-object-detection
+  - [https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-how-to-measure-performance-of-object-detection](https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-how-to-measure-performance-of-object-detection)
 
 ##### 참고한 사이트
 
-- https://github.com/AlexeyAB/darknet
-- https://eremo2002.tistory.com/108
-- https://blog.francium.tech/custom-object-training-and-detection-with-yolov3-darknet-and-opencv-41542f2ff44e
-- https://eehoeskrap.tistory.com/370
-- https://murra.tistory.com/18
+- [https://github.com/AlexeyAB/darknet](https://github.com/AlexeyAB/darknet)
+- [https://eremo2002.tistory.com/108](https://eremo2002.tistory.com/108)
+- [https://blog.francium.tech/custom-object-training-and-detection-with-yolov3-darknet-and-opencv-41542f2ff44e](https://blog.francium.tech/custom-object-training-and-detection-with-yolov3-darknet-and-opencv-41542f2ff44e)
+- [https://eehoeskrap.tistory.com/370](https://eehoeskrap.tistory.com/370)
+- [https://murra.tistory.com/18](https://murra.tistory.com/18)
