@@ -118,11 +118,13 @@ backup=backup/
 
 ##### 6. 트레이닝 시작
 ~~~sh
-# ./darknet detector train {data파일} {cfg파일} {trainset 파일} {gpu갯수 옵션}
-./darknet detector train custom_data/cfg/detector.data custom_data/cfg/yolov3-custom.cfg darknet53.conv.74 -gpus 0,1
+# ./darknet detector train {data파일} {cfg파일} {trainset 파일} {옵션}
+./darknet detector train custom_data/detector.data custom_data/cfg/yolov3-custom.cfg darknet53.conv.74 -gpus 0,1 -dont_show
 # nohup 실행
-nohup ./darknet detector train custom_data/cfg/detector.data custom_data/cfg/yolov3-custom.cfg darknet53.conv.74 -gpus 0,1 &
+nohup ./darknet detector train custom_data/detector.data custom_data/cfg/yolov3-custom.cfg darknet53.conv.74 -gpus 0,1 -dont_show &
 ~~~
+- gpu 갯수가 2개 이상일 때는 -gpus 옵션을 주어 트레이닝한다.
+
 ##### 7. 트레이닝 후 로그 보는 방법
 
 - v3로 시작하는 라인들이 계속 나오는데 중간에 이터레이션 번호가 뜨는 라인이 생김
