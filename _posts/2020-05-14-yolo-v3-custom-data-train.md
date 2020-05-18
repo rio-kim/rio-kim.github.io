@@ -124,6 +124,7 @@ backup=backup/
 nohup ./darknet detector train custom_data/detector.data custom_data/cfg/yolov3-custom.cfg darknet53.conv.74 -gpus 0,1 -dont_show &
 ~~~
 - gpu 갯수가 2개 이상일 때는 -gpus 옵션을 주어 트레이닝한다.
+- 원격 터미널 등에서 훈련하고, 훈련 중인 mAP, loss chart등을 보기 위해서 옵션으로 -mjpeg_port 8090 -map 을 줄 수 있다.
 
 ##### 7. 트레이닝 후 로그 보는 방법
 
