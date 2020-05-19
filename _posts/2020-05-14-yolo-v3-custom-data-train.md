@@ -191,27 +191,30 @@ height=608
 
 ~~~
  calculation mAP (mean average precision)...
-252
- detections_count = 360, unique_truth_count = 250
-class_id = 0, name = none, ap = 99.32%           (TP = 31, FP = 4)
-class_id = 1, name = stand-four-legs, ap = 96.36%        (TP = 95, FP = 13)
-class_id = 2, name = sit-down, ap = 99.57%       (TP = 46, FP = 2)
-class_id = 3, name = kneel-down, ap = 100.00%            (TP = 26, FP = 2)
-class_id = 4, name = eating, ap = 91.21%         (TP = 42, FP = 1)
+1212
+ detections_count = 2197, unique_truth_count = 1212
+class_id = 0, name = none, ap = 96.20%           (TP = 187, FP = 26)
+class_id = 1, name = stand-four-legs, ap = 97.12%        (TP = 389, FP = 42)
+class_id = 2, name = sit-down, ap = 96.69%       (TP = 166, FP = 19)
+class_id = 3, name = kneel-down, ap = 96.43%     (TP = 110, FP = 16)
+class_id = 4, name = eating, ap = 98.32%         (TP = 303, FP = 25)
 
- for conf_thresh = 0.25, precision = 0.92, recall = 0.96, F1-score = 0.94
- for conf_thresh = 0.25, TP = 240, FP = 22, FN = 10, average IoU = 79.26 %
+ for conf_thresh = 0.25, precision = 0.90, recall = 0.95, F1-score = 0.93
+ for conf_thresh = 0.25, TP = 1155, FP = 128, FN = 57, average IoU = 76.97 %
 
  IoU threshold = 50 %, used Area-Under-Curve for each unique Recall
- mean average precision (mAP@0.50) = 0.972909, or 97.29 %
-Total Detection Time: 6 Seconds
+ mean average precision (mAP@0.50) = 0.969528, or 96.95 %
+Total Detection Time: 41 Seconds
 ~~~
 
+- 아래의 해석은 내가 이해하기 쉽게끔 풀어 써본거라 전문가가 보면 틀릴수도 있다.
+- conf_thresh = 0.25는 25%이상 맞다고 판단되면 검출해내겠다는 뜻
 - precision(정밀도): TP/(TP+FP), 맞춘 수/모델이 검출한 수, 검출된 결과가 얼마나 정확한지
 - recall(검출율): TP/(TP_FN), 맞춘 수/실제 사람이 입력했던 라벨 수, 빠뜨리지 않고 얼마나 잘 검출해내는지
 - F1-score: precision과 recall의 조화평균
 - AP(Average Precision): precision-recall 그래프 선 아래쪽의 면적으로 평가지표로 활용됨
 - IoU: 교집합/합집합 면적
+- 즉 mAP@0.50은 교집합/합집합 면적이 50%이상 맞는지 기준에 따라서 precision과 recall에서 나오는 모든 클래스 AP의 평균값
 - 결과 분석은 아래 블로그 참조
   - [https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-how-to-measure-performance-of-object-detection](https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-how-to-measure-performance-of-object-detection)
 - 참고: 여기선 나오지 않지만 accuracy는 (TP+TN)/(TP+TN+FP+FN)으로 계산한다. 컴퓨터 비전 분야에서 잘 사용하지 않는 지표이다.
