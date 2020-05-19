@@ -207,11 +207,14 @@ class_id = 4, name = eating, ap = 91.21%         (TP = 42, FP = 1)
 Total Detection Time: 6 Seconds
 ~~~
 
-- precision: TP/(TP+FP), 맞춘 수/예측한 전체 모수
-- recall: TP/(TP_FN), 맞춘 수/어노테이션 수
+- precision(정밀도): TP/(TP+FP), 맞춘 수/모델이 검출한 수, 검출된 결과가 얼마나 정확한지
+- recall(검출율): TP/(TP_FN), 맞춘 수/실제 사람이 입력했던 라벨 수, 빠뜨리지 않고 얼마나 잘 검출해내는지
+- F1-score: precision과 recall의 조화평균
+- AP(Average Precision): precision-recall 그래프 선 아래쪽의 면적으로 평가지표로 활용됨
 - IoU: 교집합/합집합 면적
 - 결과 분석은 아래 블로그 참조
   - [https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-how-to-measure-performance-of-object-detection](https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-how-to-measure-performance-of-object-detection)
+- 참고: 여기선 나오지 않지만 accuracy는 (TP+TN)/(TP+TN+FP+FN)으로 계산한다. 컴퓨터 비전 분야에서 잘 사용하지 않는 지표이다.
 
 ##### 참고한 사이트
 
