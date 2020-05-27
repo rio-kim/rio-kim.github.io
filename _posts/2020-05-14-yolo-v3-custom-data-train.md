@@ -1,6 +1,6 @@
 ---
 layout: post
-title: yolo v3 custom data train
+title: Yolo v3 custom data train
 categories: yolo
 tags: yolo train deeplearning
 ---
